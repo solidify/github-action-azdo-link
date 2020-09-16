@@ -20,5 +20,5 @@ runs: #* Configures the path to the action's code and the application used to ex
   using: "node12" #* application used to execute the code
   main: "dist/index.js" #* file that contains the action code
 branding:
-  icon: book-open
+  icon: external-link
   color: black
