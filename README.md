@@ -19,7 +19,7 @@ on:
 ### Add a step 
 ```yaml
 - name: Get azdo wi link step
-        uses: solidify/action-azdo-links
+        uses: solidify/github-action-azdo-link
         with:
           organization: 'Org Name'
           projectName: 'Team Project Name'
