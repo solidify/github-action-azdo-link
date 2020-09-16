@@ -1,5 +1,5 @@
 name: "Azure DevOps Work Item linker" 
-description: "This Github Action creates a Pull Request comment with a link to an Azure DevOps workitem" 
+description: "This Github Action creates a Pull Request comment with a link to an Azure DevOps work item" 
 author: 'Solidify'
 inputs:
   GITHUB_TOKEN:
