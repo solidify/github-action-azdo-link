@@ -1,0 +1,24 @@
+name: "Azure DevOps Work Item linker" 
+description: "This Github Action creates a Pull Request comment with a link to an Azure DevOps workitem" 
+author: 'Solidify'
+inputs:
+  GITHUB_TOKEN:
+    description: "Repository Github token"
+    required: true
+  organization: # id of input *
+    description: "Azure DevOps Organization name"
+    required: true
+    default: ""
+  projectName: # id of input *
+    description: "Azure DevOps Project name"
+    required: true
+    default: ""
+outputs:
+  workItemLink: # id of output
+    description: "The link to the Azure Boards work item"
+runs: #* Configures the path to the action's code and the application used to execute the code.
+  using: "node12" #* application used to execute the code
+  main: "dist/index.js" #* file that contains the action code
+branding:
+  icon: book-open
+  color: black
